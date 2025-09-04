@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diet form</title>
+    <link rel="icon" type="png" href="dietf.png">
+    <link rel="stylesheet" href="diet.css">
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>Diet Form</h1>
+        <div>
+            <h2>Personal Details</h2>
+
+            <label for="title">Title:</label>
+
+            <input type="radio" id="Mr" value="Mr" name="title">
+            <label for="Mr">Mr.</label>
+
+            <input type="radio" id="Mrs" value="Mrs" name="title">
+            <label for="Mrs">Mrs.</label>
+
+            <input type="radio" id="Miss" value="Miss" name="title">
+            <label for="Miss">Miss</label>
+            <br>
+            <label for="name">Name </label>
+            <input type="text" id="name" placeholder="Enter Name" minlength="3" required> <br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age"> <br>
+
+            <label for="b-day">Date of Birth</label>
+            <input type="date" id="b-day"> <br>
+
+            <label for="height">Height</label>
+            <input type="number" id="height" placeholder="In cm" step="0.1"><br>
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" placeholder="In kg" step="0.1"> <br>
+
+            <h4>Contact Details</h4>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="abc@gmail.com"> <br>
+
+            <label for="phone">Contact</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="(+91) India" required> <br>
+        </div>
+
+        <div>
+            <h2>Medical History</h2>
+            <label for="health">Current Health Conditions</label>
+            <select id="health">
+                <option value="diabetes">Diabetes</option>
+                <option value="A & J">Arthritis and Joint Pain</option>
+                <option value="Asthma">Asthma</option>
+                <option value="PCOS">PCOS</option>
+            </select> <br>
+            <label for="others">Others</label>
+            <textarea id="others" rows="2" cols="15"></textarea> <br>
+
+            <label for="bp">Blood Pressure (BP)</label>
+
+            <input type="radio" id="high" value="high" name="bp">
+            <label for="high">High</label>
+
+            <input type="radio" id="low" value="low" name="bp">
+            <label for="low">Low</label>
+            <input type="radio" id="normal" value="normal" name="bp">
+            <label for="normal">Normal</label> <br>
+
+            <label for="ill">Past Surgeries</label>
+            <textarea id="ill" rows="2" cols="15"></textarea> <br>
+
+            <label for="tablets">Daily Tablets</label>
+
+            <input type="radio" id="yes" value="yes" name="tablets">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" value="no" name="tablets">
+            <label for="no">No</label>
+
+            <input type="radio" id="sometimes" value="sometimes" name="tablets">
+            <label for="sometimes">Sometimes</label>
+            <br>
+
+            <label for="file">Medical Report</label>
+            <input type="file" id="file" accept="image/png, image/jpeg"> <br>
+        </div>
+
+        <div>
+            <h3>Diet Habits</h3>
+
+            <label for="type">Food Type</label>
+
+            <input type="radio" id="veg" value="veg" name="type">
+            <label for="veg">Vegetarian</label>
+
+            <input type="radio" id="nveg" value="nveg" name="type">
+            <label for="nveg">Non-Vegetarian</label>
+
+            <input type="radio" id="egg" value="egg" name="type">
+            <label for="egg">Egg-tarian</label> <br>
+
+            <label for="quantity">Glass of water per day (250ml)</label>
+            <input type="number" id="quantity" min="1" max="20" value="0"> <br>
+
+            <label for="meals">Meals per-day</label>
+            <input type="number" id="meals"> <br>
+
+            <label for="food">Food Allergies</label>
+            <textarea id="food" rows="2" cols="15"></textarea> <br> <br>
+
+            <label>Breakfast</label> <br>
+            <input type="checkbox" id="dosa">
+            <label for="dosa">Dosa</label>
+
+            <input type="checkbox" id="idli">
+            <label for="idli">Idli</label>
+
+            <input type="checkbox" id="pongal">
+            <label for="pongal">Pongal</label>
+
+            <input type="checkbox" id="upma">
+            <label for="upma">Upma</label> <br>
+
+            <label>Lunch</label> <br>
+            <input type="checkbox" id="rice">
+            <label for="rice">Rice</label>
+
+            <input type="checkbox" id="dal">
+            <label for="dal">Dal</label>
+
+            <input type="checkbox" id="Sambar">
+            <label for="sambar">Sambar</label>
+
+            <input type="checkbox" id="curd">
+            <label for="curd">Curd</label> <br>
+
+            <label>Snacks</label> <br>
+            <input type="checkbox" id="Biscuits">
+            <label for="Biscuits">Biscuits</label>
+
+            <input type="checkbox" id="tea">
+            <label for="tea">Tea</label>
+
+            <input type="checkbox" id="coffee">
+            <label for="coffee">Coffee</label> <br>
+
+            <label>Dinner</label> <br>
+            <input type="checkbox" id="rice">
+            <label for="rice">Rice</label>
+
+            <input type="checkbox" id="chapathi">
+            <label for="chapathi">Chapathi</label>
+
+            <input type="checkbox" id="curry">
+            <label for="curry">Curry</label>
+        </div>
+        <div>
+            <h3>Weekly Meal Planner</h3>
+<table border="2" cellpadding="5">
+  <caption><strong>Meal Preferences for the Week</strong></caption>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Breakfast</th>
+      <th>Lunch</th>
+      <th>Dinner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monday</td>
+      <td><input type="text" name="mon_breakfast" placeholder="e.g., Idli"></td>
+      <td><input type="text" name="mon_lunch" placeholder="e.g., Rice & Dal"></td>
+      <td><input type="text" name="mon_dinner" placeholder="e.g., Chapathi"></td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td><input type="text" name="tue_breakfast"></td>
+      <td><input type="text" name="tue_lunch"></td>
+      <td><input type="text" name="tue_dinner"></td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td><input type="text" name="wed_breakfast"></td>
+      <td><input type="text" name="wed_lunch"></td>
+      <td><input type="text" name="wed_dinner"></td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td><input type="text" name="thu_breakfast"></td>
+      <td><input type="text" name="thu_lunch"></td>
+      <td><input type="text" name="thu_dinner"></td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td><input type="text" name="fri_breakfast"></td>
+      <td><input type="text" name="fri_lunch"></td>
+      <td><input type="text" name="fri_dinner"></td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td><input type="text" name="sat_breakfast"></td>
+      <td><input type="text" name="sat_lunch"></td>
+      <td><input type="text" name="sat_dinner"></td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td><input type="text" name="sun_breakfast"></td>
+      <td><input type="text" name="sun_lunch"></td>
+      <td><input type="text" name="sun_dinner"></td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+            <h3>LifeStyle</h3>
+        <div>
+            <label>Activity Types</label><br>
+            <input type="checkbox" value="gym">Gym
+            <input type="checkbox" value="yoga">Yoga
+            <input type="checkbox" value="sports">Sports <br>
+            <label for="al">Activity Level</label>
+            <select id="al">
+                <option value="sedentary">Sedentary</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+                
+            </select> <br>
+
+             <label for="sleep">Sleep Hours:</label>
+            <input type="number" id="sleep" step="0.1"> <br>
+
+            <label>Unhealthy Habits</label>
+            <input type="checkbox" id="smoke">
+            <label for="smoke">Smoking</label>
+
+            <input type="checkbox" id="alcohol">
+            <label for="alcohol">Alcohol</label>
+        </div>
+
+        <div>
+            <h3>Goals</h3>
+            <label for="goal">Interested in</label> <br>
+            <input type="radio" id="loss" value="loss" name="goal">
+            <label for="loss">Weight-Loss</label>
+
+            <input type="radio" id="gain" value="gain" name="goal">
+            <label for="gain">Weight-Gain</label>
+
+            <input type="radio" id="maintain" value="maintain" name="goal">
+            <label for="maintain">Maintain Fitness</label> <br>
+
+            <input type="radio" id="improve" value="improve" name="goal">
+            <label for="improve">Improve Fitness</label> <br>
+
+        </div>
+        <div>
+            <label for="add">Additional Notes</label>
+            <textarea id="add" rows="2" cols="15"></textarea> <br>
+        </div>
+
+        <div>
+            <input type="reset" value="Reset Form">
+            <input type="submit">
+        </div>
+    </form>
+    <h4>About Developer</h4>
+    <p style="color: blue;">Page created by Ajay</p>
+    
+    
+</body>
+</html>
